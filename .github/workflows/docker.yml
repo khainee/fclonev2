@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
-        docker image build -t "${{ secrets.DOCKER_HUB_USERNAME }}"/"${{ secrets.DOCKER_HUB_REPO }}:latest .
-        docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/"${{ secrets.DOCKER_HUB_REPO }}":latest
+        docker image build -t "${{ secrets.DOCKER_HUB_USERNAME }}"/fclone:latest .
+        docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/fclone:latest
