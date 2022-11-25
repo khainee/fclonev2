@@ -7,8 +7,8 @@ RUN apt-get -qq install -y git python3 python3-pip \
     locales python3-lxml aria2 \
     curl pv jq nginx npm
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt && \
-    apt-get -qq purge git
+RUN pip3 install --no-cache-dir -r requirements.txt
+
 COPY . .
 RUN chmod +x start.sh
 RUN chmod +x fclone
