@@ -8,7 +8,7 @@ Required Variables(Add in Settings -> Secrets -> Actions -> Actions secrets -> N
 
 - `DOCKERPW` :<p><b><a href="https://hub.docker.com/settings/security">➥🎲Get from</a></b></p> 
 - `DOCKER_HUB_USERNAME` : Enter https://hub.docker.com Username.
-- `DOCKER_HUB_REPO` : Enter You Wish Name .It will be your docker repo.
+
 
 
 ##  ဂရုပြုရန်
